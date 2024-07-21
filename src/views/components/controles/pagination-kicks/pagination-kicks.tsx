@@ -1,9 +1,10 @@
 import { Grid, Pagination } from "@mantine/core"
 import { usePaginationKicksStyles } from "./pagination-kicks-styles"
+import { useThemeQueries } from "../../../Theme/theme-queries";
 
 interface PaginationKicksProps {
     index: number;
-    totalPges: number; 
+    totalPges: number;
 }
 
 export const PaginationKicks = ({
@@ -11,7 +12,9 @@ export const PaginationKicks = ({
     totalPges
 }: PaginationKicksProps) => {
 
+    //AUX
     const classes = usePaginationKicksStyles();
+    const { isMobile } = useThemeQueries();
 
     return (
         <>
@@ -21,6 +24,7 @@ export const PaginationKicks = ({
                     <Pagination
                         total={totalPges}
                         value={index}
+                        siblings={isMobile ? 0 : 1}
                     />
                 </Grid.Col>
             </Grid>

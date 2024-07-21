@@ -30,9 +30,8 @@ export const CarouselProduto = ({
                     return (
                         <Carousel.Slide className={classes.slides}>
                             <Image
+                                className={classes.imagem}
                                 src={item.imagemUrl}
-                                h='100%'
-                                fit="contain"
                             />
                         </Carousel.Slide>
                     )

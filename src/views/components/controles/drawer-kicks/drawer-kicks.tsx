@@ -7,6 +7,7 @@ export const DrawerKicks = ({
     opened,
     children,
     title,
+    position,
     onClose,
 }: DrawerKicksProps) => {
 
@@ -19,6 +20,7 @@ export const DrawerKicks = ({
                 opened={opened}
                 onClose={onClose}
                 withCloseButton={false}
+                position={position}
             >
                 <div className={classes.bodyContainer}>
                     {title && (

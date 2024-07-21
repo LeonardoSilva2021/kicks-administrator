@@ -1,21 +1,19 @@
 import { Card } from "@mantine/core"
-
-interface CardKicksProps {
-    children?: any;
-}
+import { useCardKicksStyles } from "./card-kicks-styles";
+import { CardKicksProps } from "./card-kicks-props";
 
 export const CardKicks = ({
     children,
+    onClick,
 }: CardKicksProps) => {
+
+    const classes = useCardKicksStyles();
+
     return (
         <>
             <Card
-                style={{
-                    boxShadow: '1px 1px 1px 1px rgba(0, 0, 0, 0.4)',
-                    padding: '8px',
-                    borderRadius: '20px',
-                    display: 'flex'
-                }}
+                className={classes.root}
+                onClick={onClick}
             >
                 {children}
             </Card>

@@ -2,8 +2,15 @@ import { Grid } from "@mantine/core"
 import { ProdutoModel } from "../../../../../models/api/produtos/produto-model"
 import { PaginationKicks } from "../../../../components/controles/pagination-kicks/pagination-kicks"
 import { ProdutosListData } from "./produtos-list-data"
+import { ButttonFloatkicks } from "../../../../components/controles/button-float-kicks/button-float-kicks"
+import { PlusCircleIcon } from "../../../../components/icons/plus-circle/plus-circle-icon"
+import { useState } from "react"
+import { DrawerKicks } from "../../../../components/controles/drawer-kicks/drawer-kicks"
 
 export const ProdutosList = () => {
+
+    const [openCadastroProduto, setOpenCadastroProduto] = useState<boolean>(false);
+
 
     const produtos = [
         {
@@ -48,7 +55,26 @@ export const ProdutosList = () => {
                         list={produtos}
                     />
                 </Grid.Col>
+                <ButttonFloatkicks
+                    color="#4A69E2"
+                    onClick={() => setOpenCadastroProduto(!openCadastroProduto)}
+                >
+                    <PlusCircleIcon fill="#FFF" />
+                </ButttonFloatkicks>
             </Grid>
+
+
+            {openCadastroProduto && (
+                <>
+                    <DrawerKicks
+                        opened={openCadastroProduto}
+                        onClose={() => setOpenCadastroProduto(!openCadastroProduto)}
+                        position="right"
+                    >
+
+                    </DrawerKicks>
+                </>
+            )}
         </>
     )
 }

@@ -7,7 +7,7 @@ export const useCarouselProdutoStyles = createUseStyles({
         alignItems: 'center',
     },
     imagem: {
-        height: '100%',
-        width: '100%'
+        flex: 'none',
+        height: '100%'
     }
 })
