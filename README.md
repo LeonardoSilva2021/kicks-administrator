@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+Kicks Administrator
+Este projeto é um administrador de e-commerce especializado na venda de tênis pela internet. Desenvolvido com React e TypeScript, utiliza o framework UI Mantine para uma interface de usuário moderna e responsiva. O front-end é integrado a uma API REST desenvolvida em C#.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tecnologias Utilizadas
+Front-end:
 
-## Available Scripts
+React
+TypeScript
+Mantine UI
+Back-end:
 
-In the project directory, you can run:
+C#
+API REST
+Funcionalidades
+Gerenciamento de Produtos:
+Adicionar, editar e remover produtos
+Visualizar detalhes dos produtos
+Gerenciamento de Pedidos:
+Visualizar e atualizar status dos pedidos
+Gerenciamento de Usuários:
+Adicionar, editar e remover usuários
+Gerenciar permissões e roles de usuários
+Instalação
+Para executar o projeto localmente, siga os passos abaixo:
 
-### `npm start`
+Clone o repositório:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+bash
+Copiar código
+git clone https://github.com/LeonardoSilva2021/kicks-administrator.git
+Navegue até o diretório do projeto:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+bash
+Copiar código
+cd kicks-administrator
+Instale as dependências:
 
-### `npm test`
+bash
+Copiar código
+npm install
+Inicie o servidor de desenvolvimento:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copiar código
+npm start
+Uso
+Depois de iniciar o servidor de desenvolvimento, você pode acessar o aplicativo no seu navegador em http://localhost:3000.
 
-### `npm run build`
+Contribuição
+Contribuições são bem-vindas! Para contribuir, siga os passos abaixo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Fork este repositório.
+Crie um branch para sua feature (git checkout -b feature/nova-feature).
+Commit suas mudanças (git commit -m 'Adicionei nova feature').
+Push para o branch (git push origin feature/nova-feature).
+Abra um Pull Request.
+Licença
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contato
+Se tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Nome: Leonardo Gonçalves
+Email: leozinho.goncalves@icloud.com
+LinkedIn: [linkedin.com/in/leonardosilva](https://www.linkedin.com/in/leonardo-da-silva-gon%C3%A7alves-498b09217/)
