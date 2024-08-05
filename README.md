@@ -50,9 +50,11 @@ Para executar o projeto localmente, siga os passos abaixo:
   ```
 
 ## Uso
+
 Depois de iniciar o servidor de desenvolvimento, você pode acessar o aplicativo no seu navegador em http://localhost:3000.
 
 ## Contribuição
+
 Contribuições são bem-vindas! Para contribuir, siga os passos abaixo:
 
 1. **Fork este repositório.**
@@ -71,13 +73,14 @@ Contribuições são bem-vindas! Para contribuir, siga os passos abaixo:
   ```bash
     git push origin feature/nova-feature
   ```
+
 5. **Abra um Pull Request.**
 
-##Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-##Contato
+## Contato
 
 - **Se tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:**
 
