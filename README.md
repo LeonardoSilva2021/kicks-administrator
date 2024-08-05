@@ -86,4 +86,4 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para ma
 
   - Nome: Leonardo Gonçalves
   - Email: leozinho.goncalves@icloud.com
-  - LinkedIn: linkedin.com/in/leonardosilva
+  - LinkedIn: [linkedin.com/in/leonardodasilvagoncalves](https://www.linkedin.com/in/leonardo-da-silva-gon%C3%A7alves-498b09217/)
