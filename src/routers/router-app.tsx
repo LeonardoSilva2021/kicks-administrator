@@ -26,7 +26,7 @@ export const RouterApp = () => {
             path: '/',
             children: [
                 {
-                    path: 'login',
+                    path: '',
                     element: <LoginPage />,
                 }
             ]

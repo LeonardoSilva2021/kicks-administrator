@@ -16,7 +16,7 @@ export const useLoginPageStyles = createUseStyles({
         flexDirection: 'column',
     },
     logo: {
-        padding: '8px',
+        overflow: "hidden"
     },
     containerMobile: {
         display: 'flex',

@@ -14,7 +14,6 @@ export const LoginPage = () => {
 
   return (
     <>
-
       {isMobile ? (
         <Grid className={classes.root}>
           <Grid.Col span={12} className={classes.containerMobile}>
@@ -28,16 +27,8 @@ export const LoginPage = () => {
         <Grid className={classes.root}>
           <Grid.Col span={6} className={classes.imagemContainer}>
             <div className={classes.logo}>
-              <Image
-                src={LogoBranco}
-                fit="cover"
-              />
-            </div>
-            <div>
-              <Image
-                src={TenisFundo}
-                fit="contain"
-              />
+              <Image src={LogoBranco} alt="cover" />
+              <Image src={TenisFundo} alt="contain" />
             </div>
           </Grid.Col>
           <Grid.Col span={6}>

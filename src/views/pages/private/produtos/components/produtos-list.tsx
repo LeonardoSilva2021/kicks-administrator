@@ -1,16 +1,14 @@
 import { Grid } from "@mantine/core"
 import { ProdutoModel } from "../../../../../models/api/produtos/produto-model"
-import { PaginationKicks } from "../../../../components/controles/pagination-kicks/pagination-kicks"
 import { ProdutosListData } from "./produtos-list-data"
 import { ButttonFloatkicks } from "../../../../components/controles/button-float-kicks/button-float-kicks"
 import { PlusCircleIcon } from "../../../../components/icons/plus-circle/plus-circle-icon"
 import { useState } from "react"
-import { DrawerKicks } from "../../../../components/controles/drawer-kicks/drawer-kicks"
+import { DrawerAdiconarProduto } from "../../../../components/drawer/drawer-adiconar-produto/drawer-adiconar-produto"
 
 export const ProdutosList = () => {
 
     const [openCadastroProduto, setOpenCadastroProduto] = useState<boolean>(false);
-
 
     const produtos = [
         {
@@ -39,17 +37,17 @@ export const ProdutosList = () => {
                 }
             ]
         }
-    ] as ProdutoModel[]
+    ] as ProdutoModel[];
 
     return (
         <>
             <Grid>
-                <Grid.Col span={12}>
+                {/* <Grid.Col span={12}>
                     <PaginationKicks
                         index={1}
                         totalPges={10}
                     />
-                </Grid.Col>
+                </Grid.Col> */}
                 <Grid.Col span={12}>
                     <ProdutosListData
                         list={produtos}
@@ -63,16 +61,12 @@ export const ProdutosList = () => {
                 </ButttonFloatkicks>
             </Grid>
 
-
             {openCadastroProduto && (
                 <>
-                    <DrawerKicks
-                        opened={openCadastroProduto}
-                        onClose={() => setOpenCadastroProduto(!openCadastroProduto)}
-                        position="right"
-                    >
-
-                    </DrawerKicks>
+                    <DrawerAdiconarProduto
+                        open={openCadastroProduto}
+                        onClose={setOpenCadastroProduto}
+                    />
                 </>
             )}
         </>
