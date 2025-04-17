@@ -26,10 +26,8 @@ export const LoginPage = () => {
       ) : (
         <Grid className={classes.root}>
           <Grid.Col span={6} className={classes.imagemContainer}>
-            <div className={classes.logo}>
-              <Image src={LogoBranco} alt="cover" />
-              <Image src={TenisFundo} alt="contain" />
-            </div>
+            <Image src={LogoBranco} fit="contain" className={classes.logo} />
+            <Image src={TenisFundo} alt="cover" />
           </Grid.Col>
           <Grid.Col span={6}>
             <LoginComponent />

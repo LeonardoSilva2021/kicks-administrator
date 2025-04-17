@@ -1,4 +1,4 @@
-import { createBrowserRouter, redirect, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, Navigate, redirect, RouterProvider } from "react-router-dom"
 import { LoginPage } from "../views/pages/public/login/login-page"
 import { MainPage } from "../views/pages/private/main/main-page"
 import { DashboardPage } from "../views/pages/private/dashboard/dashboard-page"
@@ -62,6 +62,12 @@ export const RouterApp = () => {
                     element: (
                         <MainPage>
                         </MainPage>
+                    )
+                },
+                {
+                    path: '/logout',
+                    element: (
+                        <Navigate to='/' replace />
                     )
                 }
             ]

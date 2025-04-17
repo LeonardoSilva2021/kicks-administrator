@@ -22,7 +22,8 @@ export const useMenuPrincipalPageStyles = createUseStyles({
     },
     containerTop: {
         display: 'flex',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        height: '100%'
     },
     containerBottom: {
         display: 'flex',

@@ -13,7 +13,7 @@ export const DefaultIcon = ({
     return (
         <>
             <svg
-                viewBox="0 0 24 24"
+                viewBox="0 0 26 26"
                 fill={fill}
                 onClick={onClick}
                 style={styles}

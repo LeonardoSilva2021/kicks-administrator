@@ -1,14 +1,30 @@
 import { createUseStyles } from "react-jss";
 
 export const useDrawerKicksStyles = createUseStyles({
-    bodyContainer: {
+    containerBody: {
         display: 'flex',
-        flexDirection: 'column',
-        height: '100%',
+        height: '100%'
+    },
+    containerHeader: {
+        display: 'flex',
+        width: '100%',
+    },
+    title: {
+        '--text-fz': '25px',
+        width: '100%'
     },
     closeButton: {
         display: 'flex',
         justifyContent: 'flex-end',
-        width: '100%'
+    },
+    childrenBody: {
+        height: '100%', 
+        maxHeight: '80%', 
+        overflow: 'auto'
+    },
+    endComponents: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 })

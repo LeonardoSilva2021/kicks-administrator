@@ -1,13 +1,15 @@
-import { ActionIcon, Drawer, Text } from "@mantine/core"
+import { ActionIcon, Drawer, Grid, Text } from "@mantine/core"
 import { DrawerKicksProps } from "./drawer-kicks-props"
 import { useDrawerKicksStyles } from "./drawer-kicks-styles"
 import { CloseIcon } from "../../icons/close/close-icon"
+import { DividerKikcs } from "../divider-kicks/divider-kicks"
 
 export const DrawerKicks = ({
     opened,
     children,
     title,
     position,
+    endComponent,
     onClose,
 }: DrawerKicksProps) => {
 
@@ -22,23 +24,39 @@ export const DrawerKicks = ({
                 withCloseButton={false}
                 position={position}
             >
-                <div className={classes.bodyContainer}>
-                    {title && (
-                        <Text>
-                            {title}
-                        </Text>
-                    )}
-                    <div className={classes.closeButton}>
-                        <ActionIcon
-                            variant="transparent"
-                            onClick={onClose}
+                <Grid className={classes.containerBody}>
+                    <Grid.Col span={12} >
+                        <div className={classes.containerHeader}>
+                            {title && (
+                                <Text
+                                    className={classes.title}
+                                    fw={700}
+                                >
+                                    {title}
+                                </Text>
+                            )}
+                            <ActionIcon
+                                variant='transparent'
+                                onClick={onClose}
+                            >
+                                <CloseIcon />
+                            </ActionIcon>
+                        </div>
 
-                        >
-                            <CloseIcon />
-                        </ActionIcon>
-                    </div>
-                    {children}
-                </div>
+                        <DividerKikcs />
+
+                    </Grid.Col>
+                    <Grid.Col span={12} className={classes.childrenBody}>
+                        {children}
+                    </Grid.Col>
+                    {endComponent && (
+                        <>
+                            <Grid.Col span={12} className={classes.endComponents}>
+                                {endComponent}
+                            </Grid.Col>
+                        </>
+                    )}
+                </Grid>
             </Drawer>
         </>
     )

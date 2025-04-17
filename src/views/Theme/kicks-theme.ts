@@ -1,9 +1,16 @@
-import { createTheme, Drawer, Grid, Loader, Pagination } from "@mantine/core";
+import { Button, createTheme, Drawer, Grid, Loader, Pagination } from "@mantine/core";
 import { RingLoader } from "./ring-loader";
 
 export const KicksTheme = createTheme({
     fontFamily: 'Rubik, sans-serif',
     components: {
+        Button: Button.extend({
+            styles: {
+                root: {
+                    textTransform: 'none'
+                }
+            }
+        }),
         Grid: Grid.extend({
             defaultProps: {
                 display: 'flex',
@@ -11,7 +18,6 @@ export const KicksTheme = createTheme({
             styles: {
                 root: {
                     width: '100%',
-                    height: '100%'
                 }
             }
         }),

@@ -1,4 +1,4 @@
-import { Grid, Indicator, NumberFormatter, Tooltip } from "@mantine/core";
+import { Grid, Indicator, NumberFormatter } from "@mantine/core";
 import { CardKicks } from "../../controles/card-kicks/card-kicks";
 import { CarouselProduto } from "./components/carousel-produto";
 import { TypographyKikcs } from "../../controles/typography-kicks/typography-kicks";

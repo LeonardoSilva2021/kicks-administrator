@@ -4,7 +4,8 @@ export const useLoginPageStyles = createUseStyles({
     root: {
         '--grid-col-padding': '0px !important',
         '--grid-margin': '0px !important',
-        backgroundColor: '#FFF'
+        backgroundColor: '#FFF',
+        height: '100%'
     },
     imagemContainer: {
         height: '100%',
@@ -16,7 +17,7 @@ export const useLoginPageStyles = createUseStyles({
         flexDirection: 'column',
     },
     logo: {
-        overflow: "hidden"
+        height: '20%'
     },
     containerMobile: {
         display: 'flex',
